@@ -123,7 +123,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Kernel.cpp" />
     <ClCompile Include="OperationSystemSimulator.cpp" />
+    <ClCompile Include="Scheduler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Kernel.h" />
+    <ClInclude Include="Scheduler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
