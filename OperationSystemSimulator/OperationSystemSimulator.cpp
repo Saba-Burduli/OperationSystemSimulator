@@ -89,7 +89,21 @@ int main()
                 runningIndex = -1;
             }
         }
-    }
-    time++;
-}
+        time++;
 
+    }
+    //Stats
+    cout << "\n------ Results ------\n";
+    cout << "PID Arrival Burst Start Finish Turnarount \n";
+    for (int i = 0; i < n; i++)
+    {
+        int turnaround = processes[i].finish - processes[i].arrrival;
+        cout << "p" << processes[i].pid << "     "
+            << processes[i].arrrival << "     "
+            << processes[i].burst << "     "
+            << processes[i].start << "     "
+            << processes[i].finish << "       "
+            << turnaround << "\n";
+    }
+    return 0;
+}
