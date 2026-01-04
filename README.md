@@ -1,7 +1,6 @@
 
 
 
-
 # OperationSystemSimulator
 
 A small console simulator for classic CPU scheduling algorithms. It supports:
